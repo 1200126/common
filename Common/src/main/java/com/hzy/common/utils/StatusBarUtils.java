@@ -12,8 +12,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.qcd.mentalhospital.R;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -108,7 +106,7 @@ public class StatusBarUtils {
                     | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
             decorView.setSystemUiVisibility(option);
             if (useThemestatusBarColor) {
-                activity.getWindow().setStatusBarColor(activity.getResources().getColor(R.color.white));
+                activity.getWindow().setStatusBarColor(Color.parseColor("#FFFFFF"));
             } else {
                 activity.getWindow().setStatusBarColor(Color.TRANSPARENT);
             }
