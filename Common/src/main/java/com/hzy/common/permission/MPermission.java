@@ -235,5 +235,4 @@ public class MPermission extends BaseMPermission {
         }
         return -1;
     }
-
 }
